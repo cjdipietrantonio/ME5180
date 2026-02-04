@@ -32,3 +32,5 @@ plot(xs, ys,
 )
 
 scatter!([0, L], [h, 0], label = "Boundary points")
+
+savefig("brachistochrone_sol.png")

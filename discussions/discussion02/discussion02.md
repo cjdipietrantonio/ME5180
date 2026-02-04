@@ -20,10 +20,12 @@ Have you heard this before? Have you seen brachistochrone solutions? What Differ
 
 Response:
 
+Like many others, I have heard of the brachistrochrone problem from the vsauce video. However, it had been a while since I've watched it, and 
+revisiting the video after the lecture defiitely gave me a greater appreciation for the problem than the first time I watched. The brachistochrone problem starts with the time functional, applying the Euler-Lagrange equation to this functional produces the ordinary differential equation that defines the problem. 
 The solution to the bracristocrone problem is a second order non-linear ordinary differential equation, 
 the general solution to which is known to be a family of [cycloids](https://en.wikipedia.org/wiki/Cycloid). 
 The particular solution (depending on your boundary conditions/end points) is the 
-brachistocrone curve we all know and love. If we continued the example we started in lecutre, we would find the following
+brachistocrone curve we all know and love. If we continued the example we started in lecutre, we would find the following defining
 second order non-linear ordinary differential equation:
 
 $$
@@ -43,9 +45,10 @@ $$
 However, when we subsitute our boundary conditions,
 we are left with a trancendental equation. Nevertheless, we can write a quick script in Julia to numerically solve for the solution to our particular 
 brachistocrone solution (h=1,L=1). When we do so, we can create the following plot of the brachistocrone curve for the example we started in class!
-(FIND PARTICULAR SOLUTION FOR THE IN CLASS EXAMPLE and plot it!)
 
-Although I have not heard of variational calculus prior to this course, it reminds me of the process of generating linear model data to fit to a state 
+(INSERT PLOT!)
+
+Although I have not heard of variational calculus prior to this course, it somewhat reminds me of the process of generating linear model data to fit to a state 
 variable model by perturbing different effectors and recording the changes in the measurable/synthesized outputs. 
 Such practices enable real-time predictive control!
 
