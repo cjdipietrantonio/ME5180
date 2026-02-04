@@ -1,0 +1,2 @@
+Reminds me of generating linear model data to fit to a state variable model by perturbating different effectors 
+and recording the changes in the measurable/synthesized outputs. Such practices enable real-time predictive control!
