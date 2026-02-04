@@ -19,7 +19,7 @@ println("a       = ", a)
 
 
 #GENERATE PARAMETRIC CYCLOID
-theta_s = range(0, theta_f, length=400)
+theta_s = range(0, theta_f, length=1000)
 xs = a .* (theta_s .- sin.(theta_s))
 ys = h .- a .* (1 .- cos.(theta_s))
 
