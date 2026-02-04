@@ -18,8 +18,9 @@ the general solution to which is a family of cycloids(curve drawn by the rotatio
 The particular solution (depending on your boundary conditions/end points) is the 
 brachistocrone curve we all know and love. (FIND PARTICULAR SOLUTION FOR THE IN CLASS EXAMPLE and plot it!)
 
-Reminds me of generating linear model data to fit to a state variable model by perturbating different effectors 
-and recording the changes in the measurable/synthesized outputs. Such practices enable real-time predictive control!
+Another note, the variational calculus we covered reminds me of the process of generating linear model data to fit to a state 
+variable model by perturbating different effectors and recording the changes in the measurable/synthesized outputs. 
+Such practices enable real-time predictive control!
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
