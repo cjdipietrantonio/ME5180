@@ -39,7 +39,7 @@ $$
 However, when we substitute our boundary conditions, we are left with a transcendental equation. Nevertheless, we can write a quick script in Julia to numerically solve for the solution to our particular brachistochrone problem (h=1,L=1). When we do so, we can create the following plot of the brachistochrone curve for the example we started in class!
 
 <p align="center">
-    <img src="../../brachistochrone_sol.png" width="400">
+    <img src="https://github.com/cjdipietrantonio/ME5180/blob/main/brachistochrone_sol.png?raw=true" width="400">
 </p>
 
 Although I had not heard of variational calculus prior to this course, it somewhat reminds me of the process of generating linear model data to fit to a state variable model. This can be accomplished by perturbing different effectors and recording the changes in the measurable/synthesized outputs. Such practices enable real-time predictive control!
