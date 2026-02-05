@@ -44,7 +44,7 @@ However, when we substitute our boundary conditions, we are left with a transcen
 
 Although I had not heard of variational calculus prior to this course, it somewhat reminds me of the process of generating linear model data to fit to a state variable model. This can be accomplished by perturbing different effectors and recording the changes in the measurable/synthesized outputs. The resulting model can then be used to optimize a cost function including the system's goals and limits. Such practices enable real-time predictive control!
 
-Although I had not heard of the Calculus of variations prior to this course, I can see how it may be applicable in other cases, such as control theory, for optimizing a cost function to enable real-time predictive control!
+Although I had not heard of the Calculus of Variations prior to this course, I can see how it may be applicable in other cases, such as control theory, to optimize a cost function, enabling real-time predictive control!
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
