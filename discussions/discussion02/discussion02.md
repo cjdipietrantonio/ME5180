@@ -20,7 +20,7 @@ Have you heard this before? Have you seen brachistochrone solutions? What Differ
 
 Response:
 
-Like many others, I have heard of the brachistrochrone problem from the Vsauce video. However, it had been a while since I had watched it, and revisiting the video after the lecture definitely gave me a greater appreciation for the problem than the first time I watched. The brachistochrone problem starts with the time functional; applying the Euler-Lagrange equation to this functional produces a second-order non-linear ordinary differential equation, the general solution to which is known to be a family of [cycloids](https://en.wikipedia.org/wiki/Cycloid). The particular solution (depending on your boundary conditions/endpoints) is the brachistochrone curve we all know and love. If we continued the example we started in lecture, we would find the following defining second-order non-linear ordinary differential equation:
+Like many others, I have heard of the brachistochrone problem from the Vsauce video. However, it had been a while since I had watched it, and revisiting the video after the lecture definitely gave me a greater appreciation for the problem than the first time I watched. The brachistochrone problem starts with the time functional; applying the Euler-Lagrange equation to this functional produces a second-order non-linear ordinary differential equation, the general solution to which is known to be a family of [cycloids](https://en.wikipedia.org/wiki/Cycloid). The particular solution (depending on your boundary conditions/endpoints) is the brachistochrone curve we're all now familiar with. If we continued the example we started in lecture, we would find the following defining second-order non-linear ordinary differential equation:
 
 $$
 f'' = \frac{1 + (f')^2}{2(h-f)}
@@ -42,12 +42,10 @@ However, when we substitute our boundary conditions, we are left with a transcen
     <img src="https://github.com/cjdipietrantonio/ME5180/blob/main/brachistochrone_sol.png?raw=true" width="400">
 </p>
 
-Although I had not heard of variational calculus prior to this course, it somewhat reminds me of the process of generating linear model data to fit to a state variable model. This can be accomplished by perturbing different effectors and recording the changes in the measurable/synthesized outputs. The resulting model can then be used to optimize a cost function including the system's goals and limits. Such practices enable real-time predictive control!
-
-Although I had not heard of the Calculus of Variations prior to this course, I can see how it may be applicable in other cases, such as control theory, to optimize a cost function, enabling real-time predictive control!
+Although I had not heard of the Calculus of Variations prior to this course, I can see how it may be applicable in other cases, such as control theory, to optimize a cost function!
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-Submitted: TBD
+Submitted: 02/05/2025
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
