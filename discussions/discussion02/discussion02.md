@@ -36,7 +36,7 @@ $$
 y(t) = r(1 - \cos(t)) + C_y
 $$
 
-However, when we substitute our boundary conditions, we are left with a transcendental equation. Nevertheless, we can write a quick script in Julia to numerically solve for the solution to our particular brachistochrone problem (h=1,L=1). When we do so, we can create the following plot of the brachistochrone curve for the example we started in class!
+However, when we substitute our boundary conditions, we are left with a transcendental equation. Nevertheless, we can write a quick script in Julia to numerically solve for the solution to our particular brachistochrone problem (h=1,L=1). After doing so, we can create the following plot of the brachistochrone curve for the example we started in class!
 
 <p align="center">
     <img src="https://github.com/cjdipietrantonio/ME5180/blob/main/brachistochrone_sol.png?raw=true" width="400">
