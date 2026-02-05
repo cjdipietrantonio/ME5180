@@ -5,10 +5,10 @@ h = 1.0
 L = 1.0
 
 #EQUATION FOR THETA
-f(theta) = (0 - sin(0)) / (1 - cos(0)) - L
+f(theta) = (theta - sin(theta)) / (1 - cos(theta)) - L/h
 
 #SOLVE FOR THETA
-res = nlsolve(x -> [f(x[1]), [2.0]])     #initial guess of ~2 rad
+res = nlsolve(x -> [f(x[1])], [2.0])     #initial guess of ~2 rad
 theta_f = res.zero[1]
 
 #COMPUTE A
@@ -24,11 +24,12 @@ xs = a .* (theta_s .- sin.(theta_s))
 ys = h .- a .* (1 .- cos.(theta_s))
 
 plot(xs, ys,
-     xlabel = "x",
-     ylabel = "y",
-     title  = "Brachistochrone (h=1, L=1)",
+     xlabel = "x-location (m)",
+     ylabel = "y-location (m)",
+     title  = "Brachistochrone Example (h=1, L=1)",
      legend = false,
-     aspect_ratio = 1
+     aspect_ratio = 1,
+     xlims = (-0.1, L + 0.1)
 )
 
 scatter!([0, L], [h, 0], label = "Boundary points")
