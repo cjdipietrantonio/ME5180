@@ -42,7 +42,7 @@ However, when we substitute our boundary conditions, we are left with a transcen
     <img src="https://github.com/cjdipietrantonio/ME5180/blob/main/brachistochrone_sol.png?raw=true" width="400">
 </p>
 
-Although I had not heard of variational calculus prior to this course, it somewhat reminds me of the process of generating linear model data to fit to a state variable model. This can be accomplished by perturbing different effectors and recording the changes in the measurable/synthesized outputs. Such practices enable real-time predictive control!
+Although I had not heard of variational calculus prior to this course, it somewhat reminds me of the process of generating linear model data to fit to a state variable model. This can be accomplished by perturbing different effectors and recording the changes in the measurable/synthesized outputs. The resulting model can then be used to optimize a cost function including the system's goals and limits. Such practices enable real-time predictive control!
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
