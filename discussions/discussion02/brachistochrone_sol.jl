@@ -12,16 +12,16 @@ res = nlsolve(x -> [f(x[1])], [2.0])     #initial guess of ~2 rad
 theta_f = res.zero[1]
 
 #COMPUTE A
-a = 1 / (1 - cos(theta_f))
+r = 1 / (1 - cos(theta_f))
 
 println("theta_f = ", theta_f)
-println("a       = ", a)
+println("r       = ", r)
 
 
 #GENERATE PARAMETRIC CYCLOID
 theta_s = range(0, theta_f, length=1000)
-xs = a .* (theta_s .- sin.(theta_s))
-ys = h .- a .* (1 .- cos.(theta_s))
+xs = r .* (theta_s .- sin.(theta_s))
+ys = h .- r .* (1 .- cos.(theta_s))
 
 plot(xs, ys,
      xlabel = "x-location (m)",
