@@ -1,3 +1,8 @@
+#Christian DiPietrantonio
+#ME5180
+#Discussion 03: Numerical Integration and Least Action
+#02/09/2026
+
 using Plots
 
 #define physical constants
@@ -9,7 +14,7 @@ w = sqrt(k/m) # angular frequency [1/s]
 x0 = 2 # initial displacement [m]
 v0 = 0 # initial velocity [m/s]
 
-#define other condtions
+#define other conditions
 T_total = 4pi / w # total simulation time [s]
 t = range(0, T_total, length=5001) # time vector [s]
 
@@ -81,7 +86,7 @@ S_values = [S(a) for a in a_values]
 action_plot = plot(
     a_values,
     S_values,
-    xlabel = "a (trial path scalar)",
+    xlabel = "a (Trial Path Scalar)",
     ylabel = "Action S(a)",
     title = "Action for Trial Paths",
     legend = false
@@ -90,6 +95,7 @@ action_plot = plot(
 i0 = findfirst(a_values .== 0)
 a0 = a_values[i0]
 s0 = S_values[i0]
+println("Action for analytical solution (a=0): ", s0)
 
 plot!(action_plot, [a0], [s0], seriestype=:scatter, markersize=7, color=:red, label="Analytical Solution")
 
