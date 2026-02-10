@@ -87,7 +87,7 @@ action_plot = plot(
     a_values,
     S_values,
     xlabel = "a (Trial Path Scalar)",
-    ylabel = "Action S(a)",
+    ylabel = "Action",
     title = "Action for Trial Paths",
     legend = false
 )
