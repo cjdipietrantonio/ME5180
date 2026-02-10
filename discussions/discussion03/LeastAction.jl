@@ -48,7 +48,7 @@ a_values = range(-1, 1, length=101)
 #instantiate plot of trial paths
 trial_paths_plot =plot(
     title = "Trial Paths for Mass-Spring System",
-    xlabel = "time [s]",
+    xlabel = "Time [s]",
     ylabel = "x(t) [m]",
     legend = true
 )
