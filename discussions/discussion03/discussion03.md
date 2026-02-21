@@ -1,6 +1,6 @@
 Christian DiPietrantonio
 ME5180
-Discussion 02
+Discussion 03
 02/09/2026
 
 
