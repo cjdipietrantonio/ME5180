@@ -22,31 +22,37 @@ What other ways do degrees of freedom affect dynamics?
 
 Response:
 
-Assuming that pulley 2 is massless and everything starts at rest, we know that block 1 is stationary if $\ddot{y}_1 = 0$. Now, before we impose this condition, we can re-write our system of equations to solve for an expression for $\ddot{y}_1$. Doing so leaves us with the following expression, and allows us to impose the condition above:
+Assuming that pulley 2 is massless and everything starts at rest, we know that block 1 remains stationary if $\ddot{y}_1 = 0$. To figure out when this is possible, we can rewrite our system of equations to solve for an expression for $\ddot{y}_1$:
 
 $$
 \ddot{y}_1 = 0 = \frac{\left[m_1 \left(m_2 + m_3\right) - 4 m_2 m_3\right]g}{m_1 \left(m_2 + m_3\right) + 4 m_2 m_3}
 $$
 
-For physical masses, $m_{1}, m_{2}, m_{3} > 0$, therefore the denominator cannot equal zero. Also, we know that $g \neq 0$, which leaves us with:
+For physical masses $m_{1}, m_{2}, m_{3} > 0$, the denominator is positive. Also, we know that $g \neq 0$, which leaves us with:
 
 $$
 m_1 \left(m_2 + m_3\right) - 4 m_2 m_3 = 0
 $$
 
-Which can be re-written as:
+Therefore, for block 1 to remain stationary, we must have:
 
 $$
 m_1 = \frac{4 m_2 m_3}{m_2 + m_3}
 $$
 
-Which is the condition for which block 1 is stationary. Now, if we impose $\ddot{y}_1 = 0$ on our second Lagrange equation, $(-m_2 + m_3) \ddot{y}_1 + (m_2 + m_3)\ddot{y}_2 = (m_2 - m_3) g$, we obtaint the following expression for $\ddot{y}_2$:
+Now, if we impose $\ddot{y}_1 = 0$ on our second Lagrange equation,
+
+$$
+(-m_2 + m_3) \ddot{y}_1 + (m_2 + m_3)\ddot{y}_2 = (m_2 - m_3) g
+$$
+
+we obtain the following expression for $\ddot{y}_2$:
 
 $$
 \ddot{y}_2 = \frac{(m_2 - m_3) g}{m_2 + m_3}
 $$
 
-Which tells us that if $m_2 \neq m_3$, then $\ddot{y}_2 \neq 0$, and blocks 2 and 3 move! Howevever, if $m_2 = m_3$, then $\ddot{y}_2 = 0$, and the entire system is static. For the former example, I made the following updates to the Pluto notebook:
+Which tells us that if $m_2 \neq m_3$, then $\ddot{y}_2 \neq 0$, and blocks 2 and 3 move! However, if $m_2 = m_3$, then $\ddot{y}_2 = 0$, and the entire system remains static. For the first example, I made the following changes to the Pluto notebook:
 
 ```Julia
 begin
@@ -78,4 +84,18 @@ begin
 		diagram_plot
 	end
 end
+```
+From which we can confirm that blocks 2 and 3 move in opposite directions while block 1 remains stationary!
+<p align="center">
+    <img src="https://github.com/cjdipietrantonio/ME5180/blob/main/discussions/discussion05/m2_lessthan_m3.gif?raw=true"
+    width="400">
+</p>
 
+For the second case $m_2 = m_3$:
+
+<p align="center">
+    <img src="https://github.com/cjdipietrantonio/ME5180/blob/main/discussions/discussion05/m2_equals_m3.gif?raw=true"
+    width="400">
+</p>
+
+As expected, everything remains static. From this example, we can see that the dynamics of a system are significantly influenced by the degrees of freedom. Not only do they determine the number of equations of motion required to describe the system, but also how the constraints shape the system's motion and how forces are coupled between components.
