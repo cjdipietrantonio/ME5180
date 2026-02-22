@@ -98,4 +98,4 @@ For the second case $m_2 = m_3$:
     width="400">
 </p>
 
-As expected, everything remains static. From this example, we can see that the dynamics of a system are significantly influenced by the degrees of freedom. Not only do they determine the number of equations of motion required to describe the system, but also how the constraints shape the system's motion and how forces are coupled between components.
+As expected, everything remains static. From this example, we can see that the dynamics of a system are significantly influenced by its degrees of freedom. Not only do they determine the number of equations of motion required to describe the system, but also how the constraints shape the system's motion and how forces are coupled between components.
