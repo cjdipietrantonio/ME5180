@@ -27,7 +27,7 @@ Response:
 
 After watching the lecture, it was pretty clear that deriving EOMs for every generalized coordinate using the Euler-Lagrange method can be super tedious (especially for cases with a ton of generalized coordinates). So I decided to make a function that does it for me. The code below defines a function that takes the following inputs:
 - Expressions for the kinetic and potential energy ($T$ and $V$)
-- A vector of non-conservative forces $(F_q)$
+- A vector of non-conservative forces $(\vec{F_q})$
 - Vectors for generalized coordinates ($\vec{q}$) and their time derivatives $(\dot{\vec{q}})$
 - A symbolic variable for time $(t)$
 - A vector of symbolic parameters
