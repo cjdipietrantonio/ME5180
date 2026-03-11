@@ -38,7 +38,7 @@ In the main driver, parameters for a physical system (the compound pendulum show
 
 <p align="center">
     <img src="https://github.com/cjdipietrantonio/ME5180/blob/main/discussions/discussion06/system_results.png?raw=true"
-    width="400">
+    width="500">
 </p>
 
 Which shows both $\theta$ and $x$ decaying to equilibrium as energy is dissipated through the damper, as expected.
