@@ -44,4 +44,4 @@ Which shows....
 
 Overall, defining a function to automate the derivation of the EOMs for a system for us will save a significant ammount of time and effort.
 
-Code:
+**Code:**
