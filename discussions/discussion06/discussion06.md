@@ -41,7 +41,7 @@ In the main driver, parameters for a physical system (the compound pendulum show
     width="500">
 </p>
 
-Which shows both $\theta$ and $x$ decaying to equilibrium as energy is dissipated through the damper, as expected.
+Which shows both $\theta$ and $x$ converging to equilibrium as energy is dissipated through the damper, as expected.
 
 Overall, defining a function to automate the derivation of the EOMs for a system for us will save a significant amount of time and effort.
 
