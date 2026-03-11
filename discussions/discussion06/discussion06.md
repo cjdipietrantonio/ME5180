@@ -34,7 +34,7 @@ After watching the lecture, it was pretty clear that deriving EOMs for every gen
 
 The function uses the Euler-Lagrange equation to build a symbolic equation for each generalized coordinate. It then converts the 2nd-order equations into a 1st-order system, which is returned as an `ODESystem` struct, `sys`. 
 
-In the main driver, parameters for a physical system (the compound pendulum shown in the lecture) are defined and passed into the `build_lagrangian_system()` function as an example. The resulting `sys` struct is then passed to the `ODEProblem()` function along with the initial conditions and time span of the system. The result of this (`prob` struct) is then passed to the `solve()` function, which returns a `sol` struct. From this, the state-vector data can be accessed for plotting/further analysis. For this system, the following plot was created for proof of concept:
+In the main driver, parameters for a physical system (the compound pendulum shown in the lecture) are defined and passed into the `build_lagrangian_system()` function as an example. The resulting `sys` struct is then passed to the `ODEProblem()` function along with the initial conditions and time span of the system. The result of this (`prob` struct) is then passed to the `solve()` function, which returns the `sol` struct. From this, the state-vector data can be accessed for plotting/further analysis. For this system, the following plot was created for proof of concept:
 
 <p align="center">
     <img src="https://github.com/cjdipietrantonio/ME5180/blob/main/discussions/discussion06/system_results.png?raw=true"
