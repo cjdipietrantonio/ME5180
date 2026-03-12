@@ -91,7 +91,7 @@ function main()
     hmap = heatmap(k_vals, b_vals, scores,
                    xlabel = "Spring stiffness k (N/m)",
                    ylabel = "Damping coefficient b (kg/s)",
-                   title   = "Pendulum motion score",
+                   title   = "Pendulum Settling Time (s)",
                    c       = :viridis)
 
     scatter!(hmap, [best_k], [best_b],
