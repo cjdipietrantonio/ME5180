@@ -4,6 +4,7 @@ using Symbolics
 using ModelingToolkit
 using OrdinaryDiffEq
 using Plots
+using Statistics
 
 function main()
 
@@ -37,8 +38,8 @@ function main()
     # Parameter Sweep
     # --------------------------------------------------------------------
 
-    b_vals = range(0.01, 10, length = 15)
-    k_vals = range(0.01, 10, length = 15)
+    b_vals = range(0.2, 0.4, length = 100)
+    k_vals = range(0.2, 0.4, length = 100)
 
     u0 = [
         x => 0.0,
@@ -102,6 +103,10 @@ function main()
     display(hmap)
     savefig(hmap, "optimum.png")
 
+    println("Max Score: ", maximum(scores))
+    println("Median Score: ", median(scores))
+    println("Min Score: ", minimum(scores))
+
     # --------------------------------------------------------------------
     # Plot 2 - Response Comparison
     # --------------------------------------------------------------------
@@ -113,18 +118,26 @@ function main()
               legend = :topright
     )
 
+    colors = [:purple, :green]
+
     cases = [
         (best_b, best_k, "Optimum (b=$(round(best_b, digits=2)), k=$(round(best_k, digits=2)))"),
         (5.0, 2.0, "Notebook default (b=5, k=2)"),
         (0.5, 2.0, "Low damping (b=0.5, k=2)"),
-        (100.0, 2.0, "High damping (b=100, k=2)")
+        #(100.0, 2.0, "High damping (b=100, k=2)")
     ]
 
-    for (b_val, k_val, label) in cases
+    for (i, (b_val, k_val, label)) in enumerate(cases)
         params_new = [k=>k_val, b=>b_val]
         prob = remake(base_prob; p=params_new)
         sol = solve(prob, Rodas5P())
-        plot!(p2, sol.t, sol[θ], label=label, lw=2)
+
+        if i == 1
+            plot!(p2, sol.t, sol[θ], label=label, lw=4, color=:red, linestyle=:solid)
+        else
+            plot!(p2, sol.t, sol[θ], label=label, lw=2, color=colors[i-1], linestyle=:dash)
+        end
+
     end
 
     display(p2)
