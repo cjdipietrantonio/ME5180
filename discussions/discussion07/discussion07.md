@@ -34,6 +34,6 @@ The sweep found an optimum of $b = 0.27$ kg/s and $k = 0.28$ N/m, which resulted
     width="500">
 </p>
 
-The heat map provides a nice visual of the times resulting from using different combinations of $b$ and $k$. The time trace displays the $\theta$ vs time for the optimal combination of $b$ and $k$ found previously, the initial notebook default combination, and a low damping case. The results shown here confirm that the combination of $b$ and $k$ we found is in fact the optimal solution (within a given tolerance).
+The heat map provides a nice visual of the times resulting from using different combinations of $b$ and $k$. The time trace displays $\theta$ vs time for the optimal combination of $b$ and $k$ found previously, the initial notebook default combination, and a low damping case. The results shown here confirm that the combination of $b$ and $k$ we found is in fact the optimal solution (within a given tolerance).
 
 The heat map also confirms the observation about high damping. We can see that as the damping coefficient increases, the time required for the pendulum to come to rest also increases. This makes sense because a large damping coefficient locks the cart in place, decoupling it from the pendulum. Without cart movement, no energy can be transferred from the pendulum into the spring-damper system, and the pendulum swings freely (without damping, because we have not included any other damping forms in our model) as if its base were stationary.
