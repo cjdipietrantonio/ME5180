@@ -98,7 +98,7 @@ function main()
     # Plot Results
     # --------------------------------------------------------------------
 
-    p = plot(sol, idxs=θ, ylabel="Amplitude", label="θ(t)", legend=:topleft)
+    p = plot(sol, idxs=θ, ylabel="Position", label="θ(t)", legend=:topleft)
     plot!(p, sol, idxs=x, label="x(t)")
     xlabel!(p, "Time (s)")
 
