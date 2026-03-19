@@ -28,7 +28,7 @@ y_1 \\
 \end{bmatrix}
 $$
 
-Since the door cannot translate in the y direction, and it cannot rotate, we can write its position constraints as:
+Since the door cannot translate in the y-direction, and it cannot rotate, we can write its position constraints as:
 
 $$
 \vec{C} \left( \vec{q} \right) =
