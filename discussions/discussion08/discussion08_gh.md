@@ -17,7 +17,7 @@ Here, we make the Constraint equations for a hinge. What would the Constraint eq
 
 Response:
 
-In order to determine the constraint equations for the same door with a sliding (or prismatic) constraint, we can begin by trying to understand what the sliding joint does physically. A sliding joint allows translation of the door in one direction only (let's say along the x-axis). Therefore, the sliding joint constrains translation in the y-direction, and prevents rotation. In this example, we can assume that the sliding constraint is applied at the Center of Mass (COM) of the door (if it wasn't, we would have to include an offset term and a rotation matrix (which would reduce to the identity matrix due to the constraint on $\theta$) in our constraint equations). We still have the same generalized coordinates as the original problem, which are required to define the position of the COM of the door in 2D:
+In order to determine the constraint equations for the same door with a sliding (or prismatic) constraint, we can begin by trying to understand what the sliding joint does physically. A sliding joint allows translation of the door in one direction only (let's say along the x-axis). Therefore, the sliding joint constrains translation in the y-direction, and prevents rotation. In this example, we can assume that the sliding constraint is applied at the Center of Mass (COM) of the door (if it wasn't, we would have to include an offset term and a rotation matrix (which would reduce to the identity matrix due to the constraint on $\theta_1$) in our constraint equations). We still have the same generalized coordinates as the original problem, which are required to define the position of the COM of the door in 2D:
 
 $$
 \vec{q} =
