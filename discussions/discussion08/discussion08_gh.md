@@ -17,7 +17,7 @@ Here, we make the Constraint equations for a hinge. What would the Constraint eq
 
 Response:
 
-In order to determine the constraint equations for the same door with a sliding (or prismatic) constraint, we can begin by trying to understand what the sliding joint does physically. A sliding joint allows translation of the door in one direction only (let's say along the x-axis). Therefore, the sliding joint constrains translation in the y-direction, and prevents rotation. In this example, we can assume that the sliding constraint is applied at the Center of Mass (COM) of the door (if it wasn't, we would have to include an offset term and a rotation matrix (which would reduce to the identity matrix due to the constraint on $\theta_1$) in our constraint equations). We still have the same generalized coordinates as the original problem, which are required to define the position of the COM of the door in 2D:
+In order to determine the constraint equations for the same door with a sliding (or prismatic) constraint, we can begin by trying to understand what the sliding joint does physically. A sliding joint allows translation of the door in one direction only (let's say along the x-axis). Therefore, the sliding joint constrains translation in the y-direction, and prevents rotation. In this example, we can assume that the sliding constraint is applied at the Center of Mass (COM) of the door (if it wasn't, we would have to include an offset term and a rotation matrix (which would reduce to the identity matrix due to the constraint on $\theta_1$) in our constraint equations) and that the slider is located at $y = 0$. We still have the same generalized coordinates as the original problem, which are required to define the position of the COM of the door in 2D:
 
 $$
 \vec{q} =
@@ -43,7 +43,7 @@ y_1 \\
 \end{bmatrix}
 $$
 
-Because our constraints do not depend on a point on the door other than its COM, we do not have to use a rotation matrix to convert between coordinate systems. Therefore, we can see that only $x_1$ is left free, and the door can translate in the x-direction. We must now determine the velocity constraints. Given that:
+Therefore, we can see that only $x_1$ is left free, and the door can translate in the x-direction. We must now determine the velocity constraints. Given that:
 
 $$
 \frac{d}{dt} \left( \vec{C}\left( \vec{q}, t \right) \right) = C_q \dot{\vec{q}} = -\vec{C}_t
@@ -94,3 +94,8 @@ $$
 $$
 
 From this, we can see that the door's angular velocity $( \dot{\theta}_1 )$ and y-velocity $( \dot{y}_1 )$ are also constrained to zero, which makes sense given the position constraints shown above.
+
+
+
+////////////////COMMENTS//////////////////
+- had to put /= in equations with two matrices for comment to render in github
