@@ -36,7 +36,7 @@ $$
 y_1 \\
 \theta_1 \\
 \end{bmatrix}
-=
+\=
 \begin{bmatrix}
 0 \\
 0 \\
@@ -57,7 +57,7 @@ C_q =
 \frac{\partial y_1}{\partial x_1} & \frac{\partial y_1}{\partial y_1} & \frac{\partial y_1}{\partial \theta_1} \\
 \frac{\partial \theta_1}{\partial x_1} & \frac{\partial \theta_1}{\partial y_1} & \frac{\partial \theta_1}{\partial \theta_1}
 \end{bmatrix}
-=
+\=
 \begin{bmatrix}
 0 & 1 & 0 \\
 0 & 0 & 1
@@ -86,7 +86,7 @@ $$
 \dot{y}_1 \\
 \dot{\theta}_1
 \end{bmatrix}
-=
+\=
 \begin{bmatrix}
 0 \\
 0
