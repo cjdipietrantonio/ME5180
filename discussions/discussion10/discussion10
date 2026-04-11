@@ -1,0 +1,21 @@
+Christian DiPietrantonio
+ME5180
+Discussion 09
+04/11/2026
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Prompt:
+
+[![flappy bird kinematics](https://img.youtube.com/vi/neg_PUFBK9s/0.jpg)](https://www.youtube.com/watch?v=neg_PUFBK9s "flappy bird kinematics - click to watch")
+
+In this video, we use a two dimensional motion example, Flappy bird moving on a sine-wave, to demonstrate the process of creating multibody dynamics (MBD) kinematic simulations. Then, we start to derive the constraint equations and constrained motion of a piston crank system. For further info and reading, check out the [Shabana ch 3 examples](https://learning.oreilly.com/library/view/computational-dynamics-3rd/9780470686157/ch03.html). 
+
+What will the system of equations be for this system? How will we solve for the speeds of the moving parts?
+
+What other paths could you send Flappy bird on?
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Response:
+
